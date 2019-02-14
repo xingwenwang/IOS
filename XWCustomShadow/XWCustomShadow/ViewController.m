@@ -19,9 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.view.backgroundColor =[UIColor yellowColor];
-//
-    
     _infoArr =[NSArray arrayWithObjects:
                @"三字经",
                @"人之初，性本善。性相近，习相远。",
@@ -35,7 +32,7 @@
                nil];
     [self myTableView];
     
-    //[self loadWCustomShadow];
+//    [self loadWCustomShadow];
 }
 
 #pragma mark- 初始界面Table

@@ -35,10 +35,8 @@
                nil];
     [self myTableView];
     
-//    [self loadWCustomShadow];
+    //[self loadWCustomShadow];
 }
-
-
 
 #pragma mark- 初始界面Table
 -(UITableView *)myTableView
@@ -81,7 +79,6 @@
     cell.nameLabel.text = _infoArr[indexPath.section];
     
     cell.shadowView.backgroundColor = [UIColor whiteColor];
-//    cell.shadowView.backgroundColor = [UIColor clearColor];
     cell.shadowView.cornerRadius = 10.0;
     cell.shadowView.shadowColor = [UIColor redColor];
     cell.shadowView.shadowType = WOuterShadow_Type_CornerLine;
@@ -105,15 +102,8 @@
     showView.cornerRadius = 16.0;
     showView.shadowColor = [UIColor redColor];
     showView.shadowType = WOuterShadow_Type_CornerLine;
-    showView.shadowMask = WOuterShadow_Mask_Vertical|WOuterShadow_Mask_Left;
+    showView.shadowMask = WOuterShadow_Mask_Horizontal|WOuterShadow_Mask_Top;
     [self.view addSubview:showView];
-    //    [showView.outerShadowLayer addShadowColor:[UIColor redColor]];
-    
-    UILabel *label =[[UILabel alloc]initWithFrame:CGRectMake(0, 0, showView.frame.size.width, showView.frame.size.height)];
-    //    label.text = @"Hello World!";
-    //    label.backgroundColor =[UIColor blueColor];
-    [label sizeToFit];
-    [showView addSubview:label];
 }
 
 

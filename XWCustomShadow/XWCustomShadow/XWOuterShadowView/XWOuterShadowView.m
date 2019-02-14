@@ -15,20 +15,7 @@
 @implementation XWOuterShadowView
 - (void)_init
 {
-    // add as sublayer so that self.backgroundColor will work nicely
     _outerShadowLayer = [XWOuterShadowLayer layer];
-    
-//    _outerShadowLayer.actions = [NSDictionary dictionaryWithObjectsAndKeys:
-//                                 [NSNull null], @"position",
-//                                 [NSNull null], @"bounds",
-//                                 [NSNull null], @"contents",
-//                                 [NSNull null], @"shadowColor",
-//                                 [NSNull null], @"shadowOpacity",
-//                                 [NSNull null], @"shadowOffset",
-//                                 [NSNull null], @"shadowRadius",
-//                                 nil];
-//    [shadowView.layer addSublayer:_outerShadowLayer];
-//    [self.layer addSublayer:_outerShadowLayer];
 }
 
 - (id)initWithFrame:(CGRect)frame
